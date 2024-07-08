@@ -1,6 +1,6 @@
 import requests
-from parser import Parser
-from storage import Storage
+from my_parser import Parser
+from .storage import Storage
 
 class Crawler:
     def __init__(self, url: str, depth: int):

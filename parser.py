@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-class Parser:
+class MyParser:
     def parse_html(self, html_content: str):
         try:
             soup = BeautifulSoup(html_content, 'html.parser')
