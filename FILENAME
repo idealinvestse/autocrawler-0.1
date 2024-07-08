@@ -1,0 +1,5 @@
+# run.sh
+#!/bin/bash
+
+# Start the FastAPI application
+uvicorn main:app --reload
