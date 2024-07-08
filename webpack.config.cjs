@@ -1,7 +1,7 @@
 const path = require('path');
 
-export default {
-  entry: './src/index.js',
+module.exports = {
+  entry: 'index.js',
   module: {
     rules: [
       {
@@ -19,8 +19,11 @@ export default {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
     port: 3003,
+    // Add any other valid properties as needed
   },
   plugins: [],
 };
