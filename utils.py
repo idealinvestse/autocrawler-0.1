@@ -1,4 +1,4 @@
-from crawler import Crawler
+from crawler_1 import Crawler
 
 def initialize_crawler(url: str, depth: int):
     return Crawler(url, depth)
