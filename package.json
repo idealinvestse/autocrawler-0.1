@@ -1,0 +1,29 @@
+{
+    "name": "fastapi-node-project",
+    "version": "1.0.0",
+    "description": "A project with FastAPI backend and Node.js frontend",
+    "main": "App.mjs",
+    "scripts": {
+        "start": "babel-node App.mjs",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/idealinvestse/autocrawler-0.1.git"
+    },
+    "author": "Your Name <youremail@example.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/idealinvestse/autocrawler-0.1/issues"
+    },
+    "homepage": "https://github.com/idealinvestse/autocrawler-0.1#readme",
+    "dependencies": {
+        "react": "^18.3.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.24.7",
+        "@babel/core": "^7.24.7",
+        "@babel/preset-env": "^7.24.7",
+        "@babel/preset-react": "^7.24.7"
+    }
+}
