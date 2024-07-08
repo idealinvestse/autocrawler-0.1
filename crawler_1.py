@@ -1,8 +1,8 @@
 import requests
 
 # Assuming the Parser class is defined elsewhere and needs to be imported
-from .parser_1 import Parser
-from .storage import Storage
+from parser_1 import Parser
+from storage import Storage
 
 class Crawler:
     def __init__(self, url: str, depth: int):

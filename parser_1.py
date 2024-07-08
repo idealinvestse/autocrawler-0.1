@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 
-class MyParser:
+class Parser:
     def parse_html(self, html_content: str):
         try:
             soup = BeautifulSoup(html_content, 'html.parser')
@@ -15,7 +15,7 @@ class MyParser:
             data = {
                 "url": soup.find("meta", property="og:url")["content"],
                 "title": soup.title.string,
-                "metadata": soup.find_all("meta"),
+                "metadata": soup.head.find_all("meta"),
                 # Add other common elements extraction here
             }
             return data
